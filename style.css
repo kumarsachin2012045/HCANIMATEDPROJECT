@@ -1,0 +1,389 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    padding: .1px;
+}
+#nav{
+    width: 100%;
+    height:80px;
+    /* background-color: aqua; */
+    margin-top: 20px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0px 30px; */
+}
+#nav h1{
+    width: 25%;
+    height: 100%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    letter-spacing: -2.5px;
+    font-size: 40px;
+    font-family: monument;
+    position: relative;
+}
+#nav h1::after{
+    content: "©";
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+#nav h1::before{
+    content: "MODEL MANAGEMENT";
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    position: absolute;
+    letter-spacing: 1px;
+    bottom: 15px;
+    right: 50px;
+}
+#nav h3{
+    height: 100%;
+    width: 40%;
+    /* background-color: rgb(133, 78, 175); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    border-right: 2px solid black;
+  
+}
+#nav h3:nth-last-child(1){
+    /* background-color: aqua; */
+    width: 15%;
+}
+#nav h3:nth-child(3){
+    /* background-color: aquamarine; */
+    width: 15%;
+}
+#nav h3:nth-child(2){
+    /* background-color: aquamarine; */
+    width: 20%;
+}
+#center{
+    width: 100%;
+    height: 83%;
+    /* background-color: aquamarine; */
+    padding: 20px 20px 0px 20px;
+    
+}
+#content{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(8, 148, 101);
+    position: relative;
+}
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+#overlay{
+    height: 50%;
+    width: 100%;
+    bottom: 0px;
+    /* background-color: rgb(251, 22, 37); */
+    position: absolute;
+}
+#over1{
+    height: 55%;
+    width: 100%;
+    /* background-color: rgb(251, 232, 22); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    border-bottom: 2px solid rgb(248, 248, 248);
+}
+#over1 h1{
+font-family: monument;
+  font-size: 40px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 30px;
+}
+#over1 h4{
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(19, 186, 237);
+    padding: 25px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    
+  }
+#over2{
+    height: 45%;
+    width: 100%;
+    /* background-color: rgb(22, 251, 102); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    color: white;
+}
+#over2 i{
+   font-size: 45px;
+}
+#over2 h2{
+    font-size: 20px;
+}
+#scroll{
+    height: 20vh;
+    width: 100%;
+    /* background-color: aqua; */
+    /* padding: 1vw; */
+    /* display: flex; ye shrink kar dega */
+    white-space: nowrap;
+    padding: 11px;
+    overflow-x:hidden;
+    overflow-y: hidden;
+}
+#container{
+height: 100%;
+width: 100%;
+/* background-color: brown; */
+display: inline-block;
+animation-name:anime ;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+animation-timing-function: linear; 
+}
+#scroll img{
+    /* display: none; */
+   width: 8%;
+   height: 100%;
+   border-radius: 50%;
+   object-fit: cover;
+   object-position: top;
+   margin-left: 9px;
+}
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }to{
+        transform: translateX(-100%);
+    }
+}
+
+#alphabet{
+    width: 100%;
+    height: 10vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    gap: 1vw;
+}
+#alphabet h5{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2vw;
+    border-bottom: 2px solid black;
+   margin-right: 2vw;
+}
+#alphabet h6{
+    font-weight: 400;
+    font-weight: 600;
+    font-style: italic;
+    font-size: .9vw;
+    /* background-color: yellow; */
+    padding: .6vw 0.8vw;
+    border-radius: 50%;
+   
+    cursor: pointer;
+
+}
+#alphabet h6:hover{
+    border: 2px solid black;
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+}
+#page2-part1{
+    height:100%;
+    width: 45%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1670297116166-101ad52af1b8?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}
+#page2-part2 {
+      height: 70%;
+      width: 40%;
+      background-image: url(https://images.unsplash.com/photo-1483555714914-20a74b6e45f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+      background-position: center;
+      background-size: cover;
+      position: relative;
+}
+#text{
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    bottom: -155px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+}
+#text #hd{
+    width: 40%;
+    height: 100%;
+    /* background-color:beige ; */
+}
+#text #pd{
+    width: 40%;
+    height: 100%;
+    /* background-color:rgb(125, 125, 4) ; */
+}
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color: #F9F9F9;
+    display: flex;
+    padding:40px;
+    justify-content: space-between;
+}
+#page3 #circle{
+    height:100%;
+    width:50%;
+    background-color: cadetblue;
+}
+#page3 #circle img{
+    height:100%;
+    width:100%;
+    background-color: cadetblue;
+}
+#page3 #recimg{
+    height: 100%;
+    width: 40%;
+    background-image: url(https://images.unsplash.com/photo-1483555714914-20a74b6e45f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#page4{
+    height: 100%;
+    width: 100%;
+    /* background-color: beige; */
+    /* padding: 50px; */
+    padding: 20px;
+}
+#page4>h1{
+     text-align: center;
+     font-family: monument;
+     font-size: 3vw;
+     margin-bottom: 7vh;
+     letter-spacing: 5PX;
+}
+#page4 .elem{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   padding: 0px 40px;
+    border-top: 2px solid black;
+    position: relative;
+}
+.elem h5{
+    width: 80px;
+    font-weight: 500;
+    font-size: 1vw;
+}
+.elem #part2{
+   width: 40%;
+   height: 100%;
+   /* background-color: bisque; */
+}
+.elem #part2 h2{
+    font-weight: 500;
+}
+.elem img{
+   height: 50px;
+   width: 50px;
+  border-radius: 50%;
+  left: 15%;
+  position: absolute;
+  object-fit: cover;
+  object-position: top;
+  opacity: 0;
+  transition: all ease 0.7s;
+}
+.elem:hover img{
+    opacity: 1;
+    left: 30%;
+}
+.elem:hover{
+    background-color: rgb(233, 228, 228);
+}
+.elem:nth-last-child(1){
+    border-bottom: 2px solid black;
+}
+#marque{
+    /* height: 10vh; */
+    width: 100%;
+    /* background-color: aqua; */
+    white-space: nowrap;
+    padding: 10px;
+    font-family: monument;
+    font-size: 15px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+#marque h1{
+    display:inline-block;
+    /* background-color: red; */
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+   
+}
+@keyframes move {
+    from{
+      transform: translateY(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 8px));
+    }
+}
+
+#footer{
+    height: 100%;
+    width: 100%;
+
+}
